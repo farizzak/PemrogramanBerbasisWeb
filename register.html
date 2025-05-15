@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | WEB INFORMATIKA</title>
+</head>
+<body>
+    <h1>LOGIN</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="age">Umur:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="dob">Tanggal Lahir:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="favoriteColor">Warna Favorit:</label>
+        <input type="color" id="favoriteColor" name="favoriteColor"><br><br>
+
+        <label for="profilePicture">Upload Foto Profil:</label>
+        <input type="file" id="profilePicture" name="profilePicture" accept="image/*"><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Laki-laki</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Perempuan</label><br><br>
+
+        <label>Hobi:</label><br>
+        <input type="checkbox" id="hobby1" name="hobby" value="reading">
+        <label for="hobby1">Membaca</label><br>
+        <input type="checkbox" id="hobby2" name="hobby" value="traveling">
+        <label for="hobby2">Bepergian</label><br>
+        <input type="checkbox" id="hobby3" name="hobby" value="sports">
+        <label for="hobby3">Olahraga</label><br><br>
+
+        <label for="country">Negara:</label>
+        <select id="country" name="country">
+            <option value="indonesia">Indonesia</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="singapore">Singapura</option>
+            <option value="thailand">Thailand</option>
+        </select><br><br>
+
+        <label for="bio">Biografi Singkat:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="100"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <p>Belum punya akun? <a href="register.html">Daftar</a></p>
+</body>
+</html>
