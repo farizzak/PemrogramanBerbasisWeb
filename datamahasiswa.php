@@ -30,6 +30,10 @@
 </head>
 <body>
     <h1>Data Mahasiswa</h1>
+    <a href="tambahdata.php">
+        <button type="button">Tambah Data</button>
+    </a>
+    <br><br>
     <table id="mahasiswa" class="display">
         <thead>
             <tr>
