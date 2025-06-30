@@ -27,6 +27,9 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- DataTables JS -->
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 <body>
     <h1>Data Mahasiswa</h1>
@@ -43,6 +46,7 @@
                 <th>NIM</th>
                 <th>Jurusan</th>
                 <th>Alamat</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -56,6 +60,14 @@
                 <td><?php echo ($row['nim']); ?></td>
                 <td><?php echo ($row['jurusan']); ?></td>
                 <td><?php echo ($row['alamat']); ?></td>
+                <td>
+                    <a href="editdata.php?id=<?= $row['id']; ?>" class="btn btn-sm btn-primary me-1" title="Edit">
+                        <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a href="hapusdata.php?id=<?= $row['id']; ?>" class="btn btn-sm btn-danger" title="Hapus" onclick="return confirm('Yakin ingin menghapus data ini?');">
+                        <i class="bi bi-trash"></i>
+                    </a>
+                </td>
             </tr>
             <?php endforeach; ?>
         </tbody>
